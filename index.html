@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Student Feedback Form</title>
+  </head>
+  <body>
+    <h1 id="title">Student Feedback Form</h1>
+    <p id="description"><em>Complete the following form to help us to improve our students experience</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"><strong>Name:</strong> <input required id="name" name="name" type="text" placeholder="Enter your name"/></label>
+        <label id="email-label" for="email"><strong>Email:</strong> <input required id="email" name="email" type="email" placeholder="Enter your email"/></label>
+        <label id="number-label" for="age"><strong>Age (optional):</strong> <input id="number" name="age" type="number" min="13" max="120" placeholder="Your age"/></label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown"><strong>What course did you take?</strong>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">UI/UX Design</option>
+            <option value="2">Frontend Development</option>
+            <option value="3">Backend Development</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset><strong>How difficult was the course for you?</strong>
+        <label for="difficulty"><input id="high" type="radio" name="difficulty" class="inline" value="1"/> Very difficult</label>
+        <label for=""><input id="medium" type="radio" name="difficulty" class="inline" value="2"/> Just right</label>
+        <label for=""><input id="low" type="radio" name="difficulty" class="inline" value="3"/> Too easy</label>
+        </fieldset>
+        <fieldset><strong>What would you like to see improved? (Check all that apply)</strong>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="1"/> Structure and content</label>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="2"/> Projects</label>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="3"/> Theory explanation</label>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="4"/> Technical bugs</label>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="5"/> Design</label>
+        <label for="improvements"><input id="improvements" type="checkbox" name="improvements" class="inline" value="6"/> Other:</label>
+          <textarea id="improvements" name="improvements" rows="4" cols="30" placeholder="It would be nice to have..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
