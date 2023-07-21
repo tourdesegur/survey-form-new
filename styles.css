@@ -54,10 +54,11 @@ body {
     min-height: 2em;
   }
   
-  textarea, input, select {
-    padding:10px 0;
+  textarea, input, select,  select option  {
+    padding: 10px 0 10px 10px;
   }
   
+
   textarea {
     font-family: Roboto;
     font-size: 14px;
